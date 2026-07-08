@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Noémie Gil</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="portfolio">
+
+    <nav>
+      <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Noémie Gil<span>/ dev</span></a></div>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html#about">À propos</a>
+        <a href="index.html#projects">Projets</a>
+        <a href="index.html#skills">Compétences</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-tag">Dev log</div>
+      <h1>Mon <em>parcours</em><br>en code</h1>
+      <p>Notes sur ce que j'apprends, mes projets en cours, et les technologies que j'explore.</p>
+    </div>
+
+    <section id="blog-articles">
+      <div class="section-label">Articles</div>
+      <div class="blog-list">
+      </div>
+    </section>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script type="module" src="js/blog-list.js"></script>
+  <script type="module" src="js/navbar.js"></script>
+</body>
+</html>

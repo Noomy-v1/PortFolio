@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin — Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="portfolio">
+
+    <!-- Écran de verrouillage -->
+    <div id="lock-screen" class="lock-screen">
+      <div class="hero-tag">Zone privée</div>
+      <h1>Accès <em>admin</em></h1>
+      <div class="lock-form">
+        <input type="password" id="admin-key-input" placeholder="Clé admin" />
+        <button id="unlock-btn" class="btn-primary">Déverrouiller</button>
+      </div>
+      <p id="unlock-feedback" class="feedback-text"></p>
+    </div>
+
+    <!-- Formulaire (caché - validation par clé) -->
+    <section id="admin-section" style="display: none;">
+        <div class="hero-tag">Zone privée</div>
+        <h1>Gérer les <em>articles</em></h1>
+
+        <div class="section-label">Articles existants</div>
+        <div id="existing-articles" class="blog-list">
+            <!-- Rempli automatiquement par admin.js -->
+        </div>
+
+        <div class="section-label" id="form-label">Nouvel article</div>
+        <form id="article-form" class="admin-form">
+            <input type="hidden" id="editing-slug" value="" />
+            <input type="text" id="title" placeholder="Titre de l'article" required />
+            <input type="text" id="slug" placeholder="slug-de-larticle (ex: mon-premier-article)" required />
+            <textarea id="excerpt" placeholder="Résumé court" rows="2" required></textarea>
+            <textarea id="content" placeholder="Contenu en Markdown..." rows="12" required></textarea>
+            <div style="display: flex; gap: 0.5rem;">
+            <button type="submit" class="btn-primary" id="submit-btn">Publier l'article</button>
+            <button type="button" id="cancel-edit-btn" class="btn-secondary" style="display: none;">Annuler</button>
+            </div>
+        </form>
+        <p id="feedback" class="feedback-text"></p>
+    </section>
+
+  </div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
