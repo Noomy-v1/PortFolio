@@ -364,6 +364,16 @@ section {
   gap: 1rem;
 }
 
+.back-link a {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.back-link a:hover {
+  color: var(--text-primary);
+}
+
 /*ADMIN*/
 .lock-screen {
   max-width: 400px;
