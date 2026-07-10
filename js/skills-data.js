@@ -4,6 +4,10 @@ export const skills = [
         tags: ["HTML", "CSS", "JavaScript", "React", "Typescript", "Bootstrap", "Angular"],
     },
     {
+        title: "Outils",
+        tags: ["Git", "GitHub", "VS Code", "IntelliJ", "Android Studio", "Figma"],
+    },
+    {
         title: "Backend",
         tags: ["Java", "Spring Boot", "Python", "C++"],
     },
@@ -20,11 +24,7 @@ export const skills = [
         tags: ["Unity", "C#", "TextMesh Pro"],
     },
     {
-        title: "Outils",
-        tags: ["Git", "GitHub", "VS Code", "IntelliJ", "Android Studio", "Figma"],
-    },
-    {
-        title: "Méthodogolies",
+        title: "Méthodologies",
         tags: ["Agile", "Scrum"],
     },
 ];

@@ -10,19 +10,28 @@
   <div class="portfolio">
 
     <nav>
-      <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Noémie Gil<span>/ dev</span></a></div>
+      <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Noémie Gil<span> / dev</span></a></div>
       <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
-      <div class="nav-links">
-        <a href="index.html#about">À propos</a>
-        <a href="index.html#projects">Projets</a>
-        <a href="index.html#skills">Compétences</a>
-        <a href="blog.html">Blog</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
+        <div class="nav-links">
+            <a href="index.html#about">À propos</a>
+            <a href="index.html#projects">Projets</a>
+            <a href="index.html#skills">Compétences</a>
+            <a href="blog.html">Blog</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <label class="theme-switch" aria-label="Changer le thème">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="theme-switch-track">
+                <span class="theme-switch-thumb">
+                    <span class="icon-moon">🌚</span>
+                    <span class="icon-sun">🌝</span>
+                </span>
+            </span>
+      </label>
     </nav>
 
     <div class="hero">
@@ -42,5 +51,6 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script type="module" src="js/blog-list.js"></script>
   <script type="module" src="js/navbar.js"></script>
+  <script type="module" src="js/theme.js"></script>
 </body>
 </html>

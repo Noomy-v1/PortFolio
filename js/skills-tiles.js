@@ -5,14 +5,16 @@ const skillsGrid = document.querySelector('.skills-grid');
 const cardsHTML = skills.map((skill) => `
   <div class="skill-group">
     <div class="skill-group-title">${skill.title}</div>
-    <div class="skill-list">${skill.tags.join('<br>')}</div>
+    <div class="skill-tags">
+      ${skill.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
+    </div>
   </div>
 `).join('');
 
 skillsGrid.innerHTML = cardsHTML;
 
 if (window.ScrollTrigger) {
-    window.ScrollTrigger.refresh();
+  window.ScrollTrigger.refresh();
 }
 
-export { };
+export {};
