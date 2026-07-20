@@ -17,7 +17,7 @@ export const skills = [
     },
     {
         title: "Mobile",
-        tags: ["Kotlin", "Android Studio"],
+        tags: ["Kotlin", "Android Studio", "Swift", "SwiftUI", "SwiftData"],
     },
     {
         title: "Game Dev",
