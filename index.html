@@ -17,11 +17,11 @@
         <span class="bar"></span>
       </button>
       <div class="nav-links">
-        <a href="#about">À propos</a>
-        <a href="#projects">Projets</a>
-        <a href="#skills">Compétences</a>
-        <a href="blog.html">Blog</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">À propos</a>
+        <a href="#projects" data-i18n="nav.projects">Projets</a>
+        <a href="#skills" data-i18n="nav.skills">Compétences</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </div>
       <label class="theme-switch" aria-label="Changer le thème">
         <input type="checkbox" id="theme-toggle" />
@@ -32,25 +32,27 @@
           </span>
         </span>
       </label>
+      <button id="lang-toggle" class="lang-toggle">
+        <span class="lang-label">EN</span>
+      </button>
     </nav>
 
     <!-- HERO -->
     <div class="hero">
-      <div class="hero-tag">Étudiante en recherche de stage</div>
-      <h1>Développeuse <em>Web</em><br>& Mobile</h1>
-      <p>Étudiante en informatique passionnée par la création d'applications et de jeux. Mon objectif : 
-        coder des projets interactifs, du mobile jusqu'à l'intelligence artificielle.</p>
+      <div class="hero-tag" data-i18n="hero.tag">Étudiante en recherche de stage</div>
+      <h1 data-i18n="hero.title">Développeuse <em>Web</em><br>& Mobile</h1>
+      <p data-i18n="hero.desc">Étudiante en informatique passionnée par la création d'applications et de jeux. Mon objectif : coder des projets interactifs, du mobile jusqu'à l'intelligence artificielle.</p>
       <div class="hero-cta">
-        <a href="#projects" class="btn-primary">Voir mes projets</a>
-        <a href="#contact" class="btn-secondary">Me contacter</a>
+        <a href="#projects" class="btn-primary" data-i18n="hero.ctaProjects">Voir mes projets</a>
+        <a href="#contact" class="btn-secondary" data-i18n="hero.ctaContact">Me contacter</a>
       </div>
     </div>
 
     <!-- ABOUT -->
     <section id="about">
-      <div class="section-label">À propos</div>
+      <div class="section-label" data-i18n="about.label">À propos</div>
       <div class="about-grid">
-        <p class="about-text">
+        <p class="about-text" data-i18n="about.text">
           Je suis actuellement en dernière année au DEC en Techniques de l'informatique. Ce que j'aime le plus dans la programmation, 
           c'est le côté concret : partir d'un simple concept et le voir prendre vie à l'écran. Pendant mon cursus, j'ai eu l'occasion 
           de toucher à un peu de tout (des applications Android aux jeux 2D/3D, en passant par des systèmes de gestion). Ces projets ont
@@ -60,11 +62,11 @@
         <div class="about-stats">
           <div class="stat-item">
             <div class="stat-num">3+</div>
-            <div class="stat-desc">Projets académique réalisés</div>
+            <div class="stat-desc" data-i18n="about.stat1">Projets académique réalisés</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">6e</div>
-            <div class="stat-desc">Session au DEC</div>
+            <div class="stat-num" data-i18n="about.stat3">6e</div>
+            <div class="stat-desc" data-i18n="about.stat2">Session au DEC</div>
           </div>
         </div>
       </div>
@@ -72,25 +74,25 @@
 
     <!-- PROJECTS -->
     <section id="projects">
-      <div class="section-label">Projets</div>
+      <div class="section-label" data-i18n="projects.label">Projets</div>
       <div class="projects-grid">
       </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills">
-      <div class="section-label">Compétences</div>
+      <div class="section-label" data-i18n="skills.label">Compétences</div>
       <div class="skills-grid">
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
-      <div class="section-label">Contact</div>
+      <div class="section-label" data-i18n="contact.label">Contact</div>
       <div class="contact-box">
         <div class="contact-text">
-          <h3>Travaillons ensemble</h3>
-          <p>Un projet en tête ? Envoyez-moi un message.</p>
+          <h3 data-i18n="contact.title">Travaillons ensemble</h3>
+          <p data-i18n="contact.desc">Un projet en tête ? Envoyez-moi un message.</p>
         </div>
         <div class="contact-links">
           <button class="btn-primary email-copy" data-email="n.gil.dev@gmail.com">

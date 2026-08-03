@@ -1,30 +1,30 @@
 export const skills = [
     {
-        title: "Frontend",
+        title: { fr: "Frontend", en: "Frontend" },
         tags: ["HTML", "CSS", "JavaScript", "React", "Typescript", "Bootstrap", "Angular"],
     },
     {
-        title: "Backend",
+        title: { fr: "Backend", en: "Backend" },
         tags: ["Java", "Spring Boot", "Python", "C++"],
     },
     {
-        title: "Outils",
-        tags: ["Git", "GitHub", "VS Code", "IntelliJ", "Android Studio", "Figma"],
-    },
-    {
-        title: "Database",
+        title: { fr: "Base de données", en: "Database" },
         tags: ["MySQL", "MariaDB"],
     },
     {
-        title: "Mobile",
-        tags: ["Kotlin", "Android Studio", "Swift", "SwiftUI", "SwiftData"],
+        title: { fr: "Mobile", en: "Mobile" },
+        tags: ["Kotlin", "Android Studio"],
     },
     {
-        title: "Game Dev",
+        title: { fr: "Jeux vidéo", en: "Game Dev" },
         tags: ["Unity", "C#", "TextMesh Pro"],
     },
     {
-        title: "Méthodologies",
+        title: { fr: "Outils", en: "Tools" },
+        tags: ["Git", "GitHub", "VS Code", "IntelliJ", "Android Studio", "Figma"],
+    },
+    {
+        title: { fr: "Méthodologies", en: "Methodologies" },
         tags: ["Agile", "Scrum"],
     },
 ];

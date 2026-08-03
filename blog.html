@@ -17,11 +17,11 @@
         <span class="bar"></span>
       </button>
         <div class="nav-links">
-            <a href="index.html#about">À propos</a>
-            <a href="index.html#projects">Projets</a>
-            <a href="index.html#skills">Compétences</a>
-            <a href="blog.html">Blog</a>
-            <a href="index.html#contact">Contact</a>
+          <a href="index.html#about" data-i18n="nav.about">À propos</a>
+          <a href="index.html#projects" data-i18n="nav.projects">Projets</a>
+          <a href="index.html#skills" data-i18n="nav.skills">Compétences</a>
+          <a href="blog.html" data-i18n="nav.blog">Blog</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
         </div>
         <label class="theme-switch" aria-label="Changer le thème">
             <input type="checkbox" id="theme-toggle" />
@@ -32,16 +32,20 @@
                 </span>
             </span>
       </label>
+      <button id="lang-toggle" class="lang-toggle">
+        <span class="lang-label">EN</span>
+      </button>
     </nav>
 
     <div class="hero">
-      <div class="hero-tag">Dev log</div>
-      <h1>Mon <em>parcours</em><br>en code</h1>
-      <p>Notes sur ce que j'apprends, mes projets en cours, et les technologies que j'explore.</p>
+      <div class="hero-tag" data-i18n="blog.tag">Dev log</div>
+      <h1 data-i18n="blog.title">Mon <em>parcours</em><br>en code</h1>
+      <p data-i18n="blog.desc">Notes sur ce que j'apprends, mes projets en cours, et les technologies que j'explore.</p>
+      <p class="feedback-text" data-i18n="blog.notice">Les articles de blog sont rédigés uniquement en français.</p>
     </div>
 
     <section id="blog-articles">
-      <div class="section-label">Articles</div>
+      <div class="section-label" data-i18n="blog.articles">Articles</div>
       <div class="blog-list">
       </div>
     </section>
@@ -49,6 +53,7 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script type="module" src="js/i18n.js"></script>
   <script type="module" src="js/blog-list.js"></script>
   <script type="module" src="js/navbar.js"></script>
   <script type="module" src="js/theme.js"></script>

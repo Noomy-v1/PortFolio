@@ -1,3 +1,4 @@
+import './i18n.js';
 import './theme.js';
 import './navbar.js';
 import './project-data.js';
