@@ -34,9 +34,11 @@ const langToggle = document.querySelector('#lang-toggle');
 if (langToggle) {
   langToggle.addEventListener('click', () => {
     const newLang = getCurrentLang() === 'fr' ? 'en' : 'fr';
-    applyLanguage(newLang);
+
     localStorage.setItem(LANG_KEY, newLang);
+
+    applyLanguage(newLang);
   });
 }
 
-export {};
+export { };
